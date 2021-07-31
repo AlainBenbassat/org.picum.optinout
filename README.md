@@ -1,44 +1,10 @@
 # org.picum.optinout
 
+Creates an activity of type "Opt-in / Opt-out" when the communication yes/no fields change.
+
 ![Screenshot](/images/screenshot.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+The hook optinout_civicrm_customPre checks if the right field is changed.
 
-The extension is licensed under [AGPL-3.0](LICENSE.txt).
+The static method CRM_Optinout_Newsletter::processValueChange() compares the old and new value and creates an activity if needed.
 
-## Requirements
-
-* PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
-
-## Installation (Web UI)
-
-Learn more about installing CiviCRM extensions in the [CiviCRM Sysadmin Guide](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/).
-
-## Installation (CLI, Zip)
-
-Sysadmins and developers may download the `.zip` file for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-cd <extension-dir>
-cv dl org.picum.optinout@https://github.com/FIXME/org.picum.optinout/archive/master.zip
-```
-
-## Installation (CLI, Git)
-
-Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-git clone https://github.com/FIXME/org.picum.optinout.git
-cv en optinout
-```
-
-## Getting Started
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
